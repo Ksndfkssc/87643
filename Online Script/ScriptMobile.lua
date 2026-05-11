@@ -935,7 +935,7 @@ NextbotToggle:OnChanged(function(value)
         
         if not ExternalNextbotESPLoaded then
             local success, errorMsg = pcall(function()
-                ExternalNextbotESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ksndfkssc/87643/refs/heads/main/Test%20Script/NextbotESP.lua"))()
+                ExternalNextbotESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ksndfkssc/87643/refs/heads/main/Online%20Script/NextbotESP.lua"))()
                 ExternalNextbotESPLoaded = true
                 
                 _G.NextbotESPRunning = true
@@ -1070,7 +1070,7 @@ PlayerToggle:OnChanged(function(value)
         if not ExternalESPLoaded then
             local success, errorMsg = pcall(function()
                 
-                local espScript = game:HttpGet("https://raw.githubusercontent.com/Ksndfkssc/87643/refs/heads/main/Test%20Script/Esp.lua", true)
+                local espScript = game:HttpGet("https://raw.githubusercontent.com/Ksndfkssc/87643/refs/heads/main/Online%20Script/Esp.lua", true)
                 
                 
                 espScript = [[
@@ -8020,7 +8020,7 @@ LocalPlayer.CharacterAdded:Connect(function()
             
             
             local success = pcall(function()
-                ExternalESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ksndfkssc/87643/refs/heads/main/Test%20Script/Esp.lua"))()
+                ExternalESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ksndfkssc/87643/refs/heads/main/Online%20Script/Esp.lua"))()
                 ExternalESPLoaded = true
                 _G.ExternalESPRunning = true
             end)
